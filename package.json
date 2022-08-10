@@ -1,0 +1,81 @@
+{
+  "name": "meteorite-explorer-frontend",
+  "version": "1.0.0",
+  "description": "A frontend application to view meteorite data from NASA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview --host"
+  },
+  "prettier": {
+    "semi": true,
+    "printWidth": 80,
+    "useTabs": true,
+    "singleQuote": false,
+    "arrowParens": "always",
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "react"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "no-duplicate-imports": "error",
+      "spaced-comment": "error",
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/consistent-type-definitions": [
+        "error",
+        "type"
+      ]
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  },
+  "eslintIgnore": [
+    "coverage",
+    "dist",
+    "node_modules"
+  ],
+  "author": "Eddie Naff",
+  "license": "ISC",
+  "devDependencies": {
+    "@astrojs/react": "^0.4.2",
+    "@types/react": "^18.0.10",
+    "@types/react-dom": "^18.0.5",
+    "astro": "^1.0.0-rc.3",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@a7sc11u/scramble": "^0.0.6",
+    "@xstate/react": "^3.0.1",
+    "axios": "^0.27.2",
+    "fuse.js": "^6.6.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-hook-form": "^7.34.0",
+    "xstate": "^4.33.0"
+  }
+}
